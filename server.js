@@ -63,6 +63,8 @@ mongoose
               .catch((err) => {
                 console.log(err);
               });
+          } else {
+            console.log("Products exist");
           }
         })
         .catch((err) => {

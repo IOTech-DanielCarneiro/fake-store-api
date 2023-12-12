@@ -1,10 +1,10 @@
 # FakeStoreAPI
 
-[FakeStoreAPI](https://fakestoreapi.com) is a free online REST API that you can use whenever you need Pseudo-real data for
+[FakeStoreAPI](https://fakestore.iotechpis.com) is a free online REST API that you can use whenever you need Pseudo-real data for
 your e-commerce or shopping website without running any server-side code.
 It's awesome for teaching purposes, sample codes, tests and etc.
 
-You can visit in detail docs in [FakeStoreAPI](https://fakestoreapi.com) for more information.
+You can visit in detail docs in [FakeStoreAPI](https://fakestore.iotechpis.com) for more information.
 
 ## Why?
 
@@ -17,10 +17,10 @@ so I decided to create this simple web service with NodeJs(express) and MongoDB 
 
 There are 4 main resources need in shopping prototypes:
 
-- Products https://fakestoreapi.com/products
-- Carts https://fakestoreapi.com/carts
-- Users https://fakestoreapi.com/users
-- Login Token https://fakestoreapi.com/auth/login
+- Products https://fakestore.iotechpis.com/products
+- Carts https://fakestore.iotechpis.com/carts
+- Users https://fakestore.iotechpis.com/users
+- Login Token https://fakestore.iotechpis.com/auth/login
 
 ### New! "Rating" (includes rate and count) has been added to each product object!
 
@@ -31,7 +31,7 @@ you can fetch data with any kind of methods you know(fetch API, Axios, jquery aj
 ### Get all products
 
 ```js
-fetch("https://fakestoreapi.com/products")
+fetch("https://fakestore.iotechpis.com/products")
   .then((res) => res.json())
   .then((json) => console.log(json));
 ```
@@ -39,7 +39,7 @@ fetch("https://fakestoreapi.com/products")
 ### Get a single product
 
 ```js
-fetch("https://fakestoreapi.com/products/1")
+fetch("https://fakestore.iotechpis.com/products/1")
   .then((res) => res.json())
   .then((json) => console.log(json));
 ```
@@ -47,7 +47,7 @@ fetch("https://fakestoreapi.com/products/1")
 ### Add new product
 
 ```js
-fetch("https://fakestoreapi.com/products", {
+fetch("https://fakestore.iotechpis.com/products", {
   method: "POST",
   body: JSON.stringify({
     title: "test product",
@@ -77,7 +77,7 @@ Note: Posted data will not really insert into the database and just return a fak
 ### Updating a product
 
 ```js
-fetch("https://fakestoreapi.com/products/7", {
+fetch("https://fakestore.iotechpis.com/products/7", {
   method: "PUT",
   body: JSON.stringify({
     title: "test product",
@@ -103,7 +103,7 @@ fetch("https://fakestoreapi.com/products/7", {
 ```
 
 ```js
-fetch("https://fakestoreapi.com/products/8", {
+fetch("https://fakestore.iotechpis.com/products/8", {
   method: "PATCH",
   body: JSON.stringify({
     title: "test product",
@@ -133,7 +133,7 @@ Note: Edited data will not really be updated into the database.
 ### Deleting a product
 
 ```js
-fetch("https://fakestoreapi.com/products/8", {
+fetch("https://fakestore.iotechpis.com/products/8", {
   method: "DELETE",
 });
 ```
@@ -146,7 +146,7 @@ You can use query string to limit results or sort by asc|desc
 
 ```js
 // Will return all the posts that belong to the first user
-fetch("https://fakestoreapi.com/products?limit=3&sort=desc")
+fetch("https://fakestore.iotechpis.com/products?limit=3&sort=desc")
   .then((res) => res.json())
   .then((json) => console.log(json));
 ```
